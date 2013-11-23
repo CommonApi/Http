@@ -1,17 +1,24 @@
 {
-    "name": "api/http",
-    "description": "Common API for Http",
+    "name": "commonapi/http",
+    "description": "Common Http Api Interface",
     "keywords": ["api", "CommonApi", "http"],
+    "homepage": "https://github.com/CommonApi/Http",
+    "type": "api",
     "license": "MIT",
     "authors": [
         {
             "name": "AmyStephen",
-            "homepage": "http://Molajo.org/"
+            "email": "AmyStephen@gmail.com",
+            "homepage": "http://Molajo.org"
         }
     ],
+    "require": {
+        "php": ">=5.3.10",
+        "commonapi/exception": ">=0.1"
+    },
     "autoload": {
         "psr-0": {
-            "Api\\Http\\": ""
+            "CommonApi\\Http\\": ""
         }
     }
 }

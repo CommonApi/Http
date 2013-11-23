@@ -6,7 +6,7 @@
  * @copyright  2013 Common Api. All rights reserved.
  * @license    MIT
  */
-namespace Api\Http;
+namespace CommonApi\Http;
 
 /**
  * Http Redirect Interface

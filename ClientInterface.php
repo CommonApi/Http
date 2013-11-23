@@ -6,7 +6,7 @@
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2013 Common Api. All rights reserved.
  */
-namespace Api\Http;
+namespace CommonApi\Http;
 
 /**
  * Client Interface
