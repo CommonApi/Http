@@ -1,0 +1,17 @@
+{
+    "name": "api/http",
+    "description": "Common API for Http",
+    "keywords": ["api", "CommonApi", "http"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "AmyStephen",
+            "homepage": "http://Molajo.org/"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Api\\Http\\": ""
+        }
+    }
+}
