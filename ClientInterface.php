@@ -8,6 +8,8 @@
  */
 namespace CommonApi\Http;
 
+use CommonApi\Exception\InvalidArgumentException;
+
 /**
  * Client Interface
  *
@@ -18,14 +20,16 @@ namespace CommonApi\Http;
  */
 interface ClientInterface
 {
+
     /**
-     * Get Client Data
+     * Get the current value (or default) of the specified key
      *
      * @param   string $key
      * @param   mixed  $default
      *
-     * @return  int
+     * @return  mixed
      * @since   1.0
+     * @throws  \CommonApi\Exception\InvalidArgumentException
      */
     public function get($key = null, $default = null);
 }

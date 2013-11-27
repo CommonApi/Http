@@ -42,17 +42,6 @@ interface RequestInterface
     public function get($key = null, $default = null, $filter = 'Alphanumeric', $filter_options = array());
 
     /**
-     * Set the value of a specified key
-     *
-     * @param   string $key
-     * @param   mixed  $value
-     *
-     * @return  mixed
-     * @since   1.0
-     */
-    public function set($key, $value = null);
-
-    /**
      * Get Request Method - 'GET', 'POST', 'PUT', 'DELETE', 'HEAD', 'OPTIONS', 'PATCH'
      *
      * @return  mixed|string|array
@@ -66,7 +55,7 @@ interface RequestInterface
      * @return  string
      * @since   1.0
      */
-    public function getUri();
+    public function getUrl();
 
     /**
      * Returns the Scheme - HTTP or HTTPS

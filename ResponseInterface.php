@@ -8,6 +8,8 @@
  */
 namespace CommonApi\Http;
 
+use CommonApi\Exception\InvalidArgumentException;
+
 /**
  * Response Interface
  *
@@ -21,15 +23,6 @@ interface ResponseInterface
     /**
      * Set HTTP response header
      *
-     * JSON Response
-     *
-     * $this->setHeader('Content-Type', 'application/json');
-     *
-     * Download a PDF
-     *
-     * $this->setHeader('Content-Type', 'application/pdf');
-     * $this->setHeader('Content-Disposition', 'attachment; filename="downloaded.pdf"');
-     *
      * @param   string      $key
      * @param   null|string $value
      *
@@ -37,6 +30,16 @@ interface ResponseInterface
      * @since   1.0
      */
     public function setHeader($key, $value = null);
+
+    /**
+     * Sets the HTTP protocol version
+     *
+     * @param   string  $version
+     *
+     * @return  $this
+     * @throws  \CommonApi\Exception\InvalidArgumentException
+     */
+    public function setProtocolVersion($version);
 
     /**
      * Set Status Code
