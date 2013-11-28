@@ -29,7 +29,7 @@ interface RequestInterface
         PATCH   = 'PATCH';
 
     /**
-     * Get the current value (or default) of the specified key
+     * Get the current value (or default) of the specified key or all for '*'
      *
      * @param   null   $key
      * @param   null   $default
@@ -40,92 +40,4 @@ interface RequestInterface
      * @since   1.0
      */
     public function get($key = null, $default = null, $filter = 'Alphanumeric', $filter_options = array());
-
-    /**
-     * Get Request Method - 'GET', 'POST', 'PUT', 'DELETE', 'HEAD', 'OPTIONS', 'PATCH'
-     *
-     * @return  mixed|string|array
-     * @since   1.0
-     */
-    public function getMethod();
-
-    /**
-     * Get Uri
-     *
-     * @return  string
-     * @since   1.0
-     */
-    public function getUrl();
-
-    /**
-     * Returns the Scheme - HTTP or HTTPS
-     *
-     * @return  string
-     * @since   1.0
-     */
-    public function getScheme();
-
-    /**
-     * Get the User
-     *
-     * @return  string
-     * @since   1.0
-     */
-    public function getUser();
-
-    /**
-     * Get the Password
-     *
-     * @return  string
-     * @since   1.0
-     */
-    public function getPassword();
-
-    /**
-     * Host
-     *
-     * @return  string
-     * @since   1.0
-     */
-    public function getHost();
-
-    /**
-     * Port
-     *
-     * @return  string
-     * @since   1.0
-     */
-    public function getPort();
-
-    /**
-     * Authority
-     *
-     * @var     string
-     * @since   1.0
-     */
-    public function getAuthority();
-
-    /**
-     * Returns Path
-     *
-     * @var     string
-     * @since   1.0
-     */
-    public function getPath();
-
-    /**
-     * Builds normalized query string with alphabetized key/value pairs
-     *
-     * @return  string
-     * @since   1.0
-     */
-    public function getQueryString();
-
-    /**
-     * Content Type
-     *
-     * @var     string
-     * @since   1.0
-     */
-    public function getContentType();
 }
