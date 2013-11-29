@@ -21,11 +21,8 @@ interface ServerInterface
     /**
      * Get Server Data
      *
-     * @param   string $key
-     * @param   mixed  $default
-     *
-     * @return  int
+     * @return  object
      * @since   1.0
      */
-    public function get($key = null, $default = null);
+    public function get();
 }

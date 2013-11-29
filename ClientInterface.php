@@ -1,14 +1,12 @@
 <?php
 /**
- * Client Interface
+ * Http Client Interface
  *
  * @package    Http
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2013 Common Api. All rights reserved.
  */
 namespace CommonApi\Http;
-
-use CommonApi\Exception\InvalidArgumentException;
 
 /**
  * Client Interface
@@ -20,16 +18,11 @@ use CommonApi\Exception\InvalidArgumentException;
  */
 interface ClientInterface
 {
-
     /**
-     * Get the current value (or default) of the specified key
+     * Get the Client Object
      *
-     * @param   string $key
-     * @param   mixed  $default
-     *
-     * @return  mixed
+     * @return  object
      * @since   1.0
-     * @throws  \CommonApi\Exception\InvalidArgumentException
      */
-    public function get($key = null, $default = null);
+    public function get();
 }
