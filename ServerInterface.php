@@ -19,8 +19,12 @@ namespace CommonApi\Http;
 interface ServerInterface
 {
     /**
-     * Get Server Data
+     * Get the server object, including the following elements:
      *
+     * - user, password, document_root, entry_point, remote_addr, server_signature, server_software,
+     *  server_name, server_addr, server_port, server_admin
+     *
+     * @link    http://tools.ietf.org/html/rfc3986
      * @return  object
      * @since   0.1
      */
