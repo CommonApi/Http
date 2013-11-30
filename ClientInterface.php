@@ -19,8 +19,11 @@ namespace CommonApi\Http;
 interface ClientInterface
 {
     /**
-     * Get the Client Object
+     * Get the client object, including the following elements:
      *
+     * - ajax, remote_address, remote_host, browser, browser_version, is_bot, is_cli,
+     * bot, is_mobile, mobile_device, user_agent, desktop, platform
+     * 
      * @return  object
      * @since   0.1
      */
