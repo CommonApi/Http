@@ -16,7 +16,7 @@ namespace CommonApi\Http;
  * @package    Http
  * @license    MIT
  * @copyright  2013 Common Api. All rights reserved.
- * @since      1.0
+ * @since      0.1
  */
 interface RedirectInterface
 {
@@ -24,7 +24,7 @@ interface RedirectInterface
      * Redirect Application
      *
      * @return  void
-     * @since   1.0
+     * @since   0.1
      */
     public function redirect();
 }

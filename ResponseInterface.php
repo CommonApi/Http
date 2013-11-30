@@ -16,7 +16,7 @@ use CommonApi\Exception\InvalidArgumentException;
  * @package    Http
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2013 Common Api. All rights reserved.
- * @since      1.0
+ * @since      0.1
  */
 interface ResponseInterface
 {
@@ -27,7 +27,7 @@ interface ResponseInterface
      * @param   null|string $value
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function setHeader($key, $value = null);
 
@@ -49,7 +49,7 @@ interface ResponseInterface
      * @param   int $status_code
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function setStatusCode($status_code = 200);
 
@@ -59,7 +59,7 @@ interface ResponseInterface
      * @param   string $body
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function setBody($body);
 
@@ -72,7 +72,7 @@ interface ResponseInterface
      * @param   string $date
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function setCookie($key = '', $value = null, $date = null);
 
@@ -82,7 +82,7 @@ interface ResponseInterface
      * @param   string $key
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function unsetCookie($key);
 
@@ -90,7 +90,7 @@ interface ResponseInterface
      * Send Headers and Body
      *
      * @return  string
-     * @since   1.0
+     * @since   0.1
      */
     public function send();
 }
