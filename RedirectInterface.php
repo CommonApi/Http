@@ -8,6 +8,8 @@
  */
 namespace CommonApi\Http;
 
+use CommonApi\Exception\UnexpectedValueException;
+
 /**
  * Http Redirect Interface
  *
@@ -24,6 +26,7 @@ interface RedirectInterface
      * Redirect Application
      *
      * @return  void
+     * @throws  \CommonApi\Exception\UnexpectedValueException
      * @since   0.1
      */
     public function redirect();
