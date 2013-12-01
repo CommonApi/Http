@@ -16,7 +16,7 @@ namespace CommonApi\Http;
  * @copyright  2013 Common Api. All rights reserved.
  * @since      0.1
  */
-interface FileUploadInterface
+interface UploadInterface
 {
     /**
      * Upload File
