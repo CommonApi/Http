@@ -27,7 +27,7 @@ interface RedirectInterface
      *
      * @return  $this
      * @throws  \CommonApi\Exception\UnexpectedValueException
-     * @since   0.1
+     * @since   1.0
      */
     public function redirect();
 }

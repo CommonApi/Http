@@ -22,7 +22,7 @@ interface UploadInterface
      * Upload File
      *
      * @return  $this
-     * @since   0.1
+     * @since   1.0
      */
     public function upload();
 }

@@ -25,7 +25,7 @@ interface ClientInterface
      * bot, is_mobile, mobile_device, user_agent, desktop, platform
      *
      * @return  object
-     * @since   0.1
+     * @since   1.0
      */
     public function get();
 }
