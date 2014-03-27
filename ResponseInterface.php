@@ -8,8 +8,6 @@
  */
 namespace CommonApi\Http;
 
-use CommonApi\Exception\InvalidArgumentException;
-
 /**
  * Response Interface
  *
