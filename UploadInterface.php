@@ -24,5 +24,5 @@ interface UploadInterface
      * @return  $this
      * @since   1.0
      */
-    public function upload();
+    public function process();
 }
