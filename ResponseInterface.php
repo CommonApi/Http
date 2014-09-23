@@ -22,7 +22,7 @@ interface ResponseInterface
      * Send Headers and Body
      *
      * @return  string
-     * @since   1.0
+     * @since   1.0.0
      */
     public function send();
 }

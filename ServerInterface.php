@@ -26,7 +26,7 @@ interface ServerInterface
      *
      * @link    http://tools.ietf.org/html/rfc3986
      * @return  object
-     * @since   1.0
+     * @since   1.0.0
      */
     public function get();
 }
