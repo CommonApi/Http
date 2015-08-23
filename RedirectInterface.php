@@ -3,7 +3,7 @@
  * Http Redirect Interface
  *
  * @package    Http
- * @copyright  2014 Amy Stephen. All rights reserved.
+ * @copyright  2014-2015 Amy Stephen. All rights reserved.
  * @license    MIT
  */
 namespace CommonApi\Http;
@@ -17,7 +17,7 @@ use CommonApi\Exception\UnexpectedValueException;
  *
  * @package    Http
  * @license    MIT
- * @copyright  2014 Amy Stephen. All rights reserved.
+ * @copyright  2014-2015 Amy Stephen. All rights reserved.
  * @since      1.0
  */
 interface RedirectInterface
